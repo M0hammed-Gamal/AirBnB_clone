@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    Define the class City.
+      Define the class City.
 '''
 from models.base_model import BaseModel
 

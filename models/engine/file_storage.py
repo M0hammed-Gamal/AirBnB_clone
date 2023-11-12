@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    Define class FileStorage
+      Define class FileStorage
 '''
 import json
 import models

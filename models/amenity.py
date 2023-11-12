@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    Implementation of the Amenity class
+      Implementation of the Amenity class
 '''
 from models.base_model import BaseModel
 
