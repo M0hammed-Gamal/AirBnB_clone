@@ -1,95 +1,83 @@
 .filters {
-    background-color: #FFFFFF;
     height: 70px;
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    text-align: right;
+    background-color: white;
+
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
 }
 
-button:hover {
-    opacity: 0.9;
-}
-
-.locations {
-    height: 100%;
-    width: 25%;
-    border-right: 1px solid #DDDDDD;
-    order: 0;
-    text-align: left;
-    margin-left: 40px;
-    position: relative;
-}
-
-.amenities {
-    height: 100%;
-    width: 25%;
-    order: 1;
-    text-align: left;
-    margin-left: 40px;
-}
-
-button {
+.filters button {
     font-size: 18px;
-    background-color: #FF5A4F;
+    background-color: #FF5A5F;
     color: #FFFFFF;
     height: 48px;
     width: 20%;
+    border: 0px;
     border-radius: 4px;
-    border-style: none;
-    margin-top: 10px;
     margin-right: 30px;
+    cursor: pointer;
     margin-left: auto;
-    order: 2;
 }
 
-.amenities h3,
-.locations h3 {
+.filters button:hover {
+    opacity: 90%;
+}
+
+.filters .locations,
+.filters .amenities {
+    height: 100%;
+    width: 25%;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.filters .locations {
+    border-right: 1px solid #DDDDDD;
+}
+
+.filters h3 {
     font-weight: 600;
-    margin: 12px 0;
+    margin-bottom: 0px;
 }
 
-.amenities h4,
-.locations h4 {
+.filters h4 {
     font-weight: 400;
-    font-size: 12px;
-    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 0px;
 }
 
-.popover {
+.filters .popover {
     display: none;
     background-color: #FAFAFA;
-    width: 292px;
+    margin-left: -50px;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    margin-left: -41px;
-    margin-top: 13px;
-    box-sizing: border-box;
-}
-
-.popover li {
     list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
+    position: relative;
 }
 
-.popover h2 {
-    margin-bottom: 5px;
+.filters h2 {
+    margin: 0px;
+    font-size: 16px;
+    margin-left: -13px;
 }
 
-.popover ul {
-    margin-top: 5px;
+.filters .locations li:nth-child(4) {
+    margin-top: 20px;
 }
 
-.locations .popover ul {
-    padding-left: 20px;
+.filters li {
+    cursor: pointer;
 }
 
-.locations:hover .popover {
-    display: block;
-    padding-left: 18px;
-}
-
-.amenities:hover .popover {
+.filters .locations:hover .popover,
+.filters .amenities:hover .popover {
     display: block;
 }
